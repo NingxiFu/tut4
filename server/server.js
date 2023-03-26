@@ -12,6 +12,7 @@ async function listTravellers() {
   /*Q2: Write code to talk to DB and read the list of travellers
    * */
   const travellers = await db.collection("travellers").find({}).toArray();
+  console.log(travellers);
   return travellers;
 
   /*End of Q2*/
